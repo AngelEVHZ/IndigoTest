@@ -19,11 +19,14 @@ public class LPP {
         Scanner scan = new Scanner(System.in);
         System.out.println("T = ");
         int T = scan.nextInt();
-        int []palindromes = new int[T];
-        int N;
-        LPP lpp = new LPP();
         if(T<1)T=1;
         else if(T>100)T=100;
+        
+        int []palindromes = new int[T];
+        
+        int N;
+        LPP lpp = new LPP();
+       
         
         for(int i=0; i<T;i++){
             System.out.println("N = ");
@@ -31,10 +34,7 @@ public class LPP {
             lpp.setN(N);
             palindromes[i] = lpp.findLPP();
         }
-        System.out.println("");
-        for(int i=0; i<palindromes.length;i++){
-            System.out.println(palindromes[i]);
-        }
+       
            
     }
     

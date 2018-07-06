@@ -5,6 +5,8 @@
  */
 package indigotest;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Valenzuela
@@ -15,14 +17,36 @@ public class LPS {
     private long number;
 
     public static void main(String[] args) {
-        LPS lps = new LPS();
-        
-        long num= 3675356291l;
        
-        lps.setK(5);
-        lps.setN(10);
-        lps.setNumber(num);
-        System.out.println(lps.findGP());
+        Scanner scan = new Scanner(System.in);
+        System.out.println("T = ");
+        int T = scan.nextInt();
+        if(T<1)T=1;
+        else if(T>100)T=100;
+        long[] largestProducts = new long[T];
+        int K;
+        int N;
+        long num;
+        LPS lps = new LPS();
+       
+        
+        for(int i=0; i<T;i++){
+            System.out.println("N  K  =");
+            N= scan.nextInt();
+            K=scan.nextInt();
+            lps.setK(K);
+            lps.setN(N);
+            System.out.println("Number  =");
+            num = scan.nextLong();
+            lps.setNumber(num);
+            largestProducts[i]=lps.findGP();
+        }
+    
+        System.out.println("");
+        for(int i=0; i<largestProducts.length;i++){
+            System.out.println(largestProducts[i]);
+        }
+
         
     }
     
