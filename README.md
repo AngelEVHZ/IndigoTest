@@ -11,6 +11,7 @@ Este repositorio contiene las siguientes clases codificadas en Java:
 - ## Ejecución con Netbeans
 Cada clase posee su propio método Main, por lo que funcionan por separado. 
 Para ejecutar el ejercicio deseado, solo se debe hacer clic derecho sobre la clase y posteriormente clic en Run file.
+
 ![Run File](https://github.com/AngelEVHZ/IndigoTest/blob/master/IndigoTest/src/Images/Run.png)
 
 - ## Ejecución sin Netbeans
