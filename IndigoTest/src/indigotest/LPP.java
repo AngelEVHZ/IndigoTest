@@ -34,7 +34,10 @@ public class LPP {
             lpp.setN(N);
             palindromes[i] = lpp.findLPP();
         }
-       
+        System.out.println("");
+        for(int i=0; i<palindromes.length;i++){
+            System.out.println(palindromes[i]);
+        }
            
     }
     
